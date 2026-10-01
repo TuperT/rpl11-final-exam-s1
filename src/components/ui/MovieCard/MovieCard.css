@@ -1,0 +1,28 @@
+.movie-image {
+    position: relative;
+    width: 100%;
+}
+
+.movie-image::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.75) 30%,
+        rgba(0, 0, 0, 0) 70%
+    );
+    z-index: 1;
+    pointer-events: none;
+}
+
+.movie-image .ant-image {
+    display: block;
+    width: 100%;
+}
+
+.movie-image .ant-image-img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
